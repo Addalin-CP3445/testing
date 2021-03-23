@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                checkout scm
+                sh "git clone https://github.com/Addalin-CP3445/testing.git"
                 echo 'Building..'
             }
         }
