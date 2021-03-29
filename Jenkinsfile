@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh ""
                 sh "git clone https://github.com/Addalin-CP3445/testing.git"
                 echo 'Building..'
             }
